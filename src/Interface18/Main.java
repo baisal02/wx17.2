@@ -45,6 +45,7 @@ public class Main {
                     kv++;
                 }
                 l.Adress();
+                ((Kvartira) l).PayWay();
                 System.out.println(+l.getPeople().length + " adam");
 
             }
@@ -56,6 +57,7 @@ public class Main {
                     hos++;
                 }
                 l.Adress();
+                ((Hostel) l).PayWay();
                 System.out.println(l.getPeople().length + " adam");
             }
             if (l instanceof Hotel) {
@@ -65,6 +67,7 @@ public class Main {
                     hot++;
                 }
                 l.Adress();
+                ((Hotel) l).PayWay();
                 System.out.println(l.getPeople().length + " adam");
             }
         }
